@@ -25,8 +25,6 @@ async def handler_fantastik(message: Message):
 async def handler_tarix(message: Message):
     await message.answer("Tarixiy kitoblar:", reply_markup=static_reply2)
 
-
-# Fantastika kitoblari
 @dp.message(F.text == "Sehrli dunyo")
 async def book_sehrli_dunyo(message: Message):
     await message.answer(
@@ -96,8 +94,6 @@ async def book_sehrli_voqea(message: Message):
         "Sehrli voqea kitobining havolasi: https://example.com/sehrli-voqea"
     )
 
-
-# Tarixiy kitoblar
 @dp.message(F.text == "Oʻzbekiston tarixi")
 async def book_uzbekiston_tarixi(message: Message):
     await message.answer(
